@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge</title>
+    <link rel="shortcut icon" href="Icono.jfif">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <script src="script.js"></script>
+
+
+
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="Logo.png" alt="" class="logo-img">
+            <h1 class="titulo">Encriptador</h1>
+        </div>
+
+    </header>
+    <main class="contenedor">
+       <div class="cajas">
+            <div class="left">
+                <!-- <input type="text" name="" id="text-input" class="text-input" placeholder="Ingrese El texto aqui" autocomplete="off"> -->
+                <textarea name="" id="text-input" class="text-input" cols="30" rows="14" placeholder="Ingrese El texto aqui"></textarea>
+                <div class="seccion-botones">
+                    <p class="txt"><i class="bi bi-exclamation-circle-fill"></i> Solo minisculas y sin acentos</p>
+                    <div class="left-button">
+                        <button type="button" id="btn-encriptar" onclick="encriptar()"><i class="bi bi-key-fill"> Encriptar</i></button>
+                        <button type="button" id="btn-desencriptar" onclick="desencriptar()"><i class="bi bi-unlock-fill"> Desencriptar</i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <img src="Muñeco.png" alt="" class="img-contenedor" id="img-contenedor">
+                <div class="texto-contenedor" id="texto-contenedor"><h4>Ningún Mensaje Fue Encontrado</h4></div>
+                <textarea name="" id="txt-area" cols="30" rows="10" disabled="">Ingrese el texto que desees encriptar o desencriptar</textarea>
+                <i class="bi bi-check-circle-fill" id="mensaje-copiar">Mensaje Copiado</i>
+                <button type="button" id="copiar" onclick="copiar()"><i class="bi bi-clipboard-check-fill"> Copiar</i></button>
+            </div>
+       </div>
+    </main>
+    <footer>
+        <div class="footer-datos">
+            <p>fiestasfiestasjose31@gmail.com</p>
+            <p>&#169; Desarrollado por Jose Joel Fiestas Fiestas | 2022</p>
+        </div>
+    </footer>
+</body>
+</html>
